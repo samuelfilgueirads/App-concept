@@ -1,0 +1,430 @@
+#:import Factory kivy.factory.Factory
+#:import utils kivy.utils
+
+<Gerenciador_de_telas>
+    MyLayout: 
+        name: 'menu'
+    Modulo_1:
+        name: 'modulo_1'
+    Modulo_5: 
+        name: 'modulo_5'
+    Modulo_2:   
+        id:modulo_2
+        name: 'modulo_2'
+    Modulo_3:
+        name: 'modulo_3' 
+    Modulo_4:
+        id:modulo_4 
+        name: 'modulo_4'
+
+<MyPopup@Popup>
+    auto_dismiss: True
+    title: 'Module 1'
+    size_hint: 0.5,0.5
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    BoxLayout:
+        orientation: 'vertical'
+        MDCard:
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+            size_hint_x: 0.22
+            size_hint_y: 1
+            md_bg_color: utils.get_color_from_hex('#1d3557')
+            border_radius: 20
+            radius: [15]
+        Label:
+            text: 'Description (...)'
+        BoxLayout:
+            orientation: 'horizontal'
+            MDFlatButton:
+                id: one_button
+                markup: True
+                text: "[b]OPEN[/b]"
+                theme_text_color: "Custom"
+                text_color: 6/255,57/255,112/255,1
+                size_hint:0.8,0.8
+                md_bg_color: (171/255,219/255,227/255,1)
+                on_press: app.root.current = 'modulo_1'
+                on_release: root.dismiss()   
+            MDFlatButton:
+                id: two_button
+                markup: True
+                text: "[b]CLOSE[/b]"
+                theme_text_color: "Custom"
+                text_color: 1,1,1,1
+                md_bg_color: (0.6,0.1,0.1,1)
+                size_hint:0.8,0.8
+                on_release: root.dismiss()
+
+<MyPopup_2@Popup>
+    auto_dismiss: True
+    title: 'Module 5'
+    size_hint: 0.5,0.5
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    BoxLayout:
+        orientation: 'vertical'
+        MDCard:
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+            size_hint_x: 0.22
+            size_hint_y: 1
+            md_bg_color: utils.get_color_from_hex('#A8DADC')
+            border_radius: 20
+            radius: [15]
+        Label:
+            text: 'Description (...)'
+        BoxLayout:
+            orientation: 'horizontal'
+            MDFlatButton:
+                id: one_button
+                markup: True
+                text: "[b]OPEN[/b]"
+                theme_text_color: "Custom"
+                text_color: 6/255,57/255,112/255,1
+                size_hint:0.8,0.8
+                md_bg_color: (171/255,219/255,227/255,1)
+                on_press: app.root.current = 'modulo_5'
+                on_release: root.dismiss()   
+            MDFlatButton:
+                id: two_button
+                markup: True
+                text: "[b]CLOSE[/b]"
+                theme_text_color: "Custom"
+                text_color: 1,1,1,1
+                md_bg_color: (0.6,0.1,0.1,1)
+                size_hint:0.8,0.8
+                on_release: root.dismiss()
+
+<MyPopup_3@Popup>
+    auto_dismiss: True
+    title: 'Module 2'
+    size_hint: 0.5,0.5
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    BoxLayout:
+        orientation: 'vertical'
+        MDCard:
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+            size_hint_x: 0.22
+            size_hint_y: 1
+            md_bg_color: utils.get_color_from_hex('#ae87d0')
+            border_radius: 20
+            radius: [15]
+        Label:
+            text: 'Description (...)'
+        BoxLayout:
+            orientation: 'horizontal'
+            MDFlatButton:
+                id: one_button
+                markup: True
+                text: "[b]OPEN[/b]"
+                theme_text_color: "Custom"
+                text_color: 6/255,57/255,112/255,1
+                size_hint:0.8,0.8
+                md_bg_color: (171/255,219/255,227/255,1)
+                on_press: app.root.current = 'modulo_2'
+                on_release: root.dismiss()   
+            MDFlatButton:
+                id: two_button
+                markup: True
+                text: "[b]CLOSE[/b]"
+                theme_text_color: "Custom"
+                text_color: 1,1,1,1
+                md_bg_color: (0.6,0.1,0.1,1)
+                size_hint:0.8,0.8
+                on_release: root.dismiss()
+
+<MyPopup_4@Popup>
+    auto_dismiss: True
+    title: 'Module 3'
+    size_hint: 0.5,0.5
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    BoxLayout:
+        orientation: 'vertical'
+        MDCard:
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+            size_hint_x: 0.22
+            size_hint_y: 1
+            md_bg_color: utils.get_color_from_hex('#679289')
+            border_radius: 20
+            radius: [15]
+        Label:
+            text: 'Description (...)'
+        BoxLayout:
+            orientation: 'horizontal'
+            MDFlatButton:
+                id: one_button
+                markup: True
+                text: "[b]OPEN[/b]"
+                theme_text_color: "Custom"
+                text_color: 6/255,57/255,112/255,1
+                size_hint:0.8,0.8
+                md_bg_color: (171/255,219/255,227/255,1)
+                on_press: app.root.current = 'modulo_3'
+                on_release: root.dismiss()   
+            MDFlatButton:
+                id: two_button
+                markup: True
+                text: "[b]CLOSE[/b]"
+                theme_text_color: "Custom"
+                text_color: 1,1,1,1
+                md_bg_color: (0.6,0.1,0.1,1)
+                size_hint:0.8,0.8
+                on_release: root.dismiss()
+
+<MyPopup_5@Popup>
+    auto_dismiss: True
+    title: 'Module 4'
+    size_hint: 0.5,0.5
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    BoxLayout:
+        orientation: 'vertical'
+        MDCard:
+            pos_hint: {'center_x':0.5,'center_y':0.5}
+            size_hint_x: 0.22
+            size_hint_y: 1
+            md_bg_color: 176/255,194/255,247/255,1
+            border_radius: 20
+            radius: [15]
+        Label:
+            text: 'Description (...)'
+        BoxLayout:
+            orientation: 'horizontal'
+            MDFlatButton:
+                id: one_button
+                markup: True
+                text: "[b]OPEN[/b]"
+                theme_text_color: "Custom"
+                text_color: 6/255,57/255,112/255,1
+                size_hint:0.8,0.8
+                md_bg_color: (171/255,219/255,227/255,1)
+                on_press: app.root.current = 'modulo_4'
+                on_release: root.dismiss()
+            MDFlatButton:
+                id: two_button
+                markup: True
+                text: "[b]CLOSE[/b]"
+                theme_text_color: "Custom"
+                text_color: 1,1,1,1
+                md_bg_color: (0.6,0.1,0.1,1)
+                size_hint:0.8,0.8
+                on_release: root.dismiss()
+
+<MyPopup_6@Popup>
+    auto_dismiss: True
+    title: 'Histórico do LabSIn'
+    size_hint: 0.8,0.8
+    pos_hint: {'center_x':0.5,'center_y':0.5}
+    background: 'yellow.png'
+    BoxLayout:
+        orientation: 'vertical'
+        spacing:5
+        RstDocument:
+            size_hint:1,2.5
+            text: "\\n".join(("Description", "-----------","\n (...)"))
+
+        BoxLayout:
+            orientation: 'horizontal'
+            Label:
+                text:''
+            Label:
+                text:'' 
+
+            MDFlatButton:
+                id: two_button
+                markup: True
+                text: "[b]CLOSE[/b]"
+                theme_text_color: "Custom"
+                text_color: 1,1,1,1
+                #background_normal: ''
+                md_bg_color: (0.6,0.1,0.1,1)
+                size_hint:0.8,0.2
+                on_release: root.dismiss()
+
+            Label:
+                text:''
+
+            Label:
+                text:''
+
+<MyLayout>
+    canvas.before:
+        Color:
+            rgba: (1,1,1,1)
+        Rectangle:
+            pos:self.pos
+            size:self.size
+
+    NavigationLayout:
+        ScreenManager:
+            Screen:
+
+                FloatLayout:
+                    size: root.width,root.height
+
+                    MDFlatButton:
+                        size_hint: 0.07,0.07
+                        pos_hint: {'center_x': 0.1, 'center_y': 0.2}
+                        Image:
+                            source:'information1.png'
+                            size_hint: 1,1
+
+                    MDTooltipImage_4:
+                        id:image_pareng
+                        pos_hint: {'center_x': 0.5-0.18, 'center_y': 0.22-0.04}
+                        source:'help_icon.png'
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        tooltip_text: 'Module 4'
+
+                    MDCard:
+                        #size_hint: 0.19*1.3,0.2*1.3
+                        size_hint: 0.13*1.3*1.15,0.2*1.3*1.15
+                        pos_hint: {'center_x':0.5-0.18,'center_y':0.22}
+                        md_bg_color: 94/255, 114/255, 173/255,1
+                        border_radius: 20
+                        radius: [15] 
+                        MDFlatButton:
+                            pos_hint: {'center_x':0.5, 'center_y':0.5}
+                            size_hint: 1,1
+                            on_release:Factory.MyPopup_5().open()
+                            Image:
+                                source: 'help_image1.png'                 
+
+                    MDTooltipImage_5:
+                        id:image_transmgen
+                        pos_hint: {'center_x': 0.5+0.18, 'center_y': 0.22-0.04}
+                        source:'help_icon.png'
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        tooltip_text: 'Module 5' 
+
+                    MDCard:
+                        size_hint: 0.13*1.3*1.15,0.2*1.3*1.15
+                        pos_hint: {'center_x':0.5+0.18,'center_y':0.22}
+                        md_bg_color: utils.get_color_from_hex('#A8DADC')
+                        border_radius: 20
+                        radius: [15] 
+                        MDFlatButton:
+                            pos_hint: {'center_x':0.5, 'center_y':0.5}
+                            size_hint: 1,1
+                            on_release: Factory.MyPopup_2().open()
+                            Image:
+                                source: 'help_image1.png'
+
+                    MDTooltipImage_1:
+                        id:image_vorecon
+                        pos_hint: {'center_x': .5, 'center_y': .46}
+                        source:'help_icon.png'
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        tooltip_text: 'Module 1'
+
+                    MDCard:
+                        size_hint: 0.13*1.3*1.15,0.2*1.3*1.15
+                        pos_hint: {'center_x':0.5,'center_y':0.5}
+                        md_bg_color: utils.get_color_from_hex('#1d3557')
+                        border_radius: 20
+                        radius: [15]
+                        MDFlatButton:
+                            pos_hint: {'center_x':0.5,'center_y':0.5}
+                            size_hint:1,1
+                            on_release: Factory.MyPopup().open()
+                            Image:
+                                source: 'help_image1.png'
+
+                    MDTooltipImage_2:
+                        id:image_tep1
+                        pos_hint: {'center_x': 0.5+0.18, 'center_y': 0.78-0.04}
+                        source:'help_icon.png'
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        tooltip_text: 'Module 2'
+
+                    MDCard:
+                        size_hint: 0.13*1.3*1.15,0.2*1.3*1.15
+                        pos_hint: {'center_x':0.5+0.18,'center_y':0.78}
+                        md_bg_color: utils.get_color_from_hex('#ae87d0')
+                        border_radius: 20
+                        radius: [15]
+                        MDFlatButton:
+                            pos_hint: {'center_x':0.5,'center_y':0.5}
+                            #size_hint:0.19*1.4,0.2*1.4
+                            size_hint:1,1
+                            on_release: Factory.MyPopup_3().open()
+                            Image:
+                                source: 'help_image1.png'
+
+                    MDTooltipImage_3:
+                        id:image_tep2
+                        pos_hint: {'center_x': 0.5-0.18, 'center_y': 0.78-0.04}
+                        source:'help_icon.png'
+                        size_hint: None, None
+                        size: "150dp", "150dp"
+                        tooltip_text: 'Module 3'
+
+                    MDCard:
+                        size_hint: 0.13*1.3*1.15,0.2*1.3*1.15
+                        pos_hint: {'center_x':0.5-0.18,'center_y':0.78}
+                        md_bg_color: utils.get_color_from_hex('#679289') 
+                        border_radius: 20
+                        radius: [15]
+                        MDFlatButton:
+                            pos_hint: {'center_x':0.5,'center_y':0.5}
+                            size_hint:1,1
+                            on_release: Factory.MyPopup_4().open()
+                            Image:
+                                source: 'help_image1.png'
+
+                    MDToolbar:
+                        title: "MENU"
+                        pos_hint:{'top':1}
+                        md_bg_color:0,0,0,1
+                        size_hint_y:0.05
+                        left_action_items: [["menu", lambda x: nav_drawer.set_state("open")]]
+
+
+        MDNavigationDrawer:
+            id: nav_drawer
+            ContentNavigationDrawer:
+                ScrollView:
+                    MDList:
+                        OneLineAvatarIconListItem:
+                            text: 'Account'
+                            on_release: Factory.MyPopup_6().open()
+                            ImageLeftWidget:
+                                source:'account-circle.png'
+                        OneLineAvatarIconListItem:
+                            text:'Info'
+                            on_release: Factory.MyPopup_6().open()
+                            ImageLeftWidget:
+                                source: 'information.png'
+
+                        OneLineAvatarIconListItem:
+                            text:'Info'
+                            on_release: Factory.MyPopup_6().open()
+                            ImageLeftWidget:
+                                source: 'information.png'
+                        OneLineAvatarIconListItem:
+                            text: 'Help'
+                            on_release: Factory.MyPopup_6().open()
+                            ImageLeftWidget:
+                                source:'help-circle.png'
+                        OneLineIconListItem:
+                            text:'Instagram'
+                            on_release: root.open_insta()
+                            IconLeftWidget:
+                                icon:'instagram'
+                        OneLineIconListItem:
+                            text:'Youtube'
+                            on_release: root.open_youtube()
+                            IconLeftWidget:
+                                icon:'youtube'
+                        OneLineIconListItem:
+                            text:'Facebook'
+                            on_release: root.open_facebook()
+                            IconLeftWidget:
+                                icon:'facebook'
+                        OneLineAvatarIconListItem:
+                            text:'Exit'
+                            on_release: app.stop()
+                            ImageLeftWidget:
+                                source: 'exit-run.png'
+
